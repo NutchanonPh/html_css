@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout</title>
+    <style>
+        header {
+            overflow: hidden;
+            background-color: salmon;
+            padding: 10px;
+        }
+        .logo {
+            float: left;
+            background-color: deeppink;
+        }
+        nav {
+            float: right;
+            background-color: deepskyblue;
+        }
+        .card {
+            float: left;
+            margin-inline: 8px;
+            text-align: center;
+            border: dashed;
+        }
+        main {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <img src="https://picsum.photos/250" alt="test">
+            <h3>Nice Pic</h3>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/250" alt="test">
+            <h3>Nice Pic</h3>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/250" alt="test">
+            <h3>Nice Pic</h3>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Container</title>
+    <style>
+        body {
+            min-height: 100vh;
+        }
+        .logo {
+            /* background-color: brown; */
+            display: inline-block;
+            width: 48%;
+        }
+        .navbar {
+            /* background-color: greenyellow; */
+            display: inline-block;
+            width: 48%;
+            text-align: right;
+        }
+        .header {
+            background: aqua;
+            padding-block: 16px;
+            padding-left: 4px;
+        }
+        .title {
+            background: antiquewhite;
+            margin: 0;
+        }
+        .show-area {
+            background-color: darkolivegreen;
+            padding: 20px;
+        }
+        .card-container {
+            background-color: cornflowerblue;
+            padding: 10px;
+        }
+        .card {
+            border: 1px dashed white;
+            width: 250px;
+            padding: 4px;
+            text-align: center;
+            display: inline-block;
+            margin: 4px 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Logo</div>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <h1 class="title">Picture Gallery</h1>
+    <div class="show-area">
+        <div class="card-container">
+            <div class="card">
+                <img src="https://picsum.photos/250?random=1" alt="pic1">
+                <h3>Nice Pic</h3>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/250?random=2" alt="pic2">
+                <h3>Nice Pix</h3>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/250?random=3" alt="pic3">
+                <h3>Nice Pig</h3>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/250?random=4" alt="pic4">
+                <h3>Nice Pik</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

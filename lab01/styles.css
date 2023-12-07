@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: darkslategrey;
+    border: 3px solid black;
+    position: absolute;
+    inset: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+}
+.card {
+    border: 3px solid red;
+    position: absolute;
+    inset: 30px;
+    border-radius: 2%;
+}
+h1 {
+    text-align: center;
+}
+.crossButton {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+}
+.profile {
+    position: absolute;
+    top: 4%;
+    left: 18%;
+}
+.box {
+    position: relative;
+    top: 63%;
+    color: gold;
+}
+.notification {
+    position: relative;
+    top: -15%;
+    left: 98%;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Prompt', sans-serif; */
+}

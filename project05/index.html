@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Element</title>
+</head>
+<body>
+    <h1>Form Element</h1>
+    <form>
+    <label for="username">Username : </label>
+    <input type="text" id="username" name="username" value="guest">
+    <label for="password">Password : </label>
+    <input type="password" id="password" name="password">
+    <input type="submit" value="OK">
+    </form>
+    <hr>
+    <h1>Type : Radio</h1>
+    <form>
+        <input type="radio" id="html" name="subject" value="html">
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="subject" value="css">
+        <label for="css">CSS</label>
+        <input type="radio" id="js" name="subject" value="js">
+        <label for="js">JavaScript</label>
+        <input type="submit">
+    </form>
+    <hr>
+    <h1>Type : Checkbox</h1>
+    <form>
+        <input type="checkbox" id="html" name="selected" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="selected" value="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" name="selected" value="js">
+        <label for="js">JavaScript</label>
+        <input type="submit">
+    </form>
+    <h1>Type : Select - option</h1>
+    <hr>
+    <h1>Select - option</h1>
+    <form>
+        <select id="subject" name="register">
+            <option disabled selected>Please Select</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <!-- register = css -->
+        </select>
+        <textarea name="notes" id="" cols="30" rows="10"></textarea>
+        <!-- <button >OK</button> -->
+        <!-- <button>Cancel</button> -->
+        <!-- <input type="button" value="OK"> -->
+        <input type="submit">
+    </form>
+</body>
+</html>
