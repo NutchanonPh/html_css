@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            /* กำหนดหน้าจอไม่เกิน 1200px */
+            max-width: 1200px;
+            margin: auto;
+        }
+        header {
+            min-height: 100px;
+            background-color: tomato;
+            /* กำหนดตำแหน่ง Nav Bar */
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .logo {
+            align-self: center;
+            /* กำหนดเส้นขอบของโลโก้ */
+            border: 1px solid silver;
+            transition: all 1s ease;
+        }
+        .logo:hover {
+            background: skyblue;
+            color: gold;
+        }
+        nav {
+            display: flex;
+            /* กำหนดระยะห่าง */
+            gap: 8px;
+            background-color: antiquewhite;
+        }
+        nav a {
+            display: block;
+            text-decoration: none;
+            padding: 8px;
+            background-color: aquamarine;
+        }
+        /* ถ้าหน้าจอลดมาถึง 1000px หรือต่ำกว่า */
+        @media(max-width: 1000px) {
+            /* จะกลายเป็น space around */
+            header {
+                justify-content: space-around;
+            }
+            /* nav bar space between */
+            nav {
+                flex-basis: 50%;
+                justify-content: space-between;
+            }
+        }
+        /* ถ้าลดลงมาถึง 800px */
+        @media(max-width: 800px) {
+            /* จะไม่แสดง logo */
+            .logo {
+                display: none;
+            }
+            nav {
+                flex-grow: 1;
+                justify-content: space-around;
+            }
+        }
+        /* ถ้า < 600px */
+        @media(max-width: 600px) {
+            nav {
+                /* stack navbar => column */
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Responsive</h1>
+    <hr>
+    <header>
+        <h1 class="logo">LOGO</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+</body>
+</html>
