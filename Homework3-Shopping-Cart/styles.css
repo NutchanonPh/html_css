@@ -1,0 +1,291 @@
+* {
+    font-family: "Kanit";
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+    transition: 0.5s;
+  }
+  .logo {
+    position: relative;
+    width: 200px;
+    height: auto;
+    right: 10px;
+  }
+  .logo img {
+    position: relative;
+    top: 3px;
+    width: 40%;
+  }
+  nav {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .nav-center {
+    display: flex;
+    position: relative;
+    gap: 15px;
+    font-weight: 600;
+  }
+  
+  .nav-right a {
+    text-decoration: none;
+  }
+  
+  .nav-center a {
+    padding: 10px 15px 10px 15px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+  }
+  
+  .cart-circle::before {
+    content: "0";
+    color: white;
+    font-size: 13px;
+    display: flex;
+    position: absolute;
+    right: 177px;
+    bottom: 23px;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: red;
+    border: 2px;
+  }
+  
+  div {
+    display: block;
+  }
+  
+  .nav-right a > label {
+    padding: 10px 15px 10px 15px;
+    color: black;
+  }
+  
+  .nav-right a > i {
+    font-size: 20px;
+    padding: 10px 5px 10px 5px;
+    color: black;
+    text-decoration: none;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .nav-right a > label {
+    padding: 10px 15px 10px 15px;
+    color: black;
+  }
+  main {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+  }
+  
+  .content {
+    display: flex;
+    gap: 35px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .card-left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    gap: 30px;
+  }
+  .card-top,
+  .card-bottom {
+    width: 100%;
+    height: 190px;
+    background-color: white;
+    box-shadow: 2px 5px 10px rgb(211, 211, 211);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .card-top a,
+  .card-bottom a {
+    margin-left: 30px;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  .gg-doc {
+    width: 145px;
+    height: 145px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 2%;
+    border-radius: 20px;
+    background: linear-gradient(
+        34deg,
+        rgb(16, 67, 157) 0%,
+        rgb(21, 100, 236) 56%,
+        rgba(152, 207, 255, 1) 95%
+      ),
+      url(./image/google-docs.png);
+    background-position: 50% 130%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+  }
+  select {
+    cursor: pointer;
+    color: rgb(112, 112, 112);
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    height: 30px;
+    width: 80px;
+    border-radius: 8px;
+    margin-left: 5px;
+    padding-left: 10px;
+  }
+  
+  .price label {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  .file-slid {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(227, 101, 28, 1);
+  }
+  
+  .gg-slid {
+    width: 145px;
+    height: 145px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 2%;
+    border-radius: 20px;
+    background-image: linear-gradient(
+        28deg,
+        rgba(227, 101, 28, 1) 0%,
+        #fbbc04 66%,
+        rgb(255, 234, 172) 90%
+      ),
+      url(./image/google-slide.png);
+    background-position: 50% 130%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+  }
+  
+  .gg-doc,
+  .gg-slid {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .card-right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 55%;
+  }
+  
+  .card-main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    box-shadow: 2px 5px 10px rgb(211, 211, 211);
+    border-radius: 20px;
+    padding: 30px;
+  }
+  .c-main-top .name {
+    padding-left: 10px;
+    font-size: 18px;
+    color: gray;
+    font-weight: 600;
+  }
+  .sub-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 10px;
+    padding-right: 20px;
+    color: rgb(101, 101, 101);
+  }
+  
+  .promo {
+    width: 100%;
+    padding: 20px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .promo input[type="text"] {
+    width: 65%;
+    height: 45px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    color: rgb(94, 94, 94);
+  }
+  .promo button {
+    width: 25%;
+    height: 45px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 15px;
+    border: 2px solid green;
+  }
+  .c-main-bottom {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .total h1 {
+    color: red;
+  }
+  .c-main-bottom button {
+    width: 100%;
+    height: 45px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: red;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 2px 5px 10px rgb(211, 211, 211);
+  }
+  
